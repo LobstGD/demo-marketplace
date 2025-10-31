@@ -15,7 +15,7 @@ export default function Review({ cardId }) {
         if (!cardId) return;
         const fetchCard = async () => {
             try {
-                const res = await fetch(`http://localhost:8080/card/${cardId}`);
+                const res = await fetch(`https://market-place-yn4a.onrender.com/card/${cardId}`);
                 if (!res.ok) return;
                 const data = await res.json();
                 setCardInfo({ brand: data.brand, title: data.title });
@@ -30,7 +30,7 @@ export default function Review({ cardId }) {
         if (!cardId) return;
         const fetchReviews = async () => {
             try {
-                const res = await fetch(`http://localhost:8080/reviews/${cardId}`);
+                const res = await fetch(`https://market-place-yn4a.onrender.com/reviews/${cardId}`);
                 if (!res.ok) return;
                 const data = await res.json();
                 setReviews(data);
@@ -53,7 +53,7 @@ export default function Review({ cardId }) {
         }
 
         try {
-            const res = await fetch(`http://localhost:8080/create/${cardId}/review`, {
+            const res = await fetch(`https://market-place-yn4a.onrender.com/create/${cardId}/review`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

@@ -16,7 +16,7 @@ export default function Cards() {
     useEffect(() => {
         const fetchCard = async () => {
             try {
-                const response = await fetch(`http://localhost:8080/card/${id}`);
+                const response = await fetch(`https://market-place-yn4a.onrender.com/${id}`);
                 if (!response.ok) throw new Error("Ошибка при получении карточки");
                 const data = await response.json();
                 setCard(data);
@@ -25,7 +25,7 @@ export default function Cards() {
                     const urls = {};
                     for (let imgObj of data.images) {
                         try {
-                            const res = await fetch(`http://localhost:8080${imgObj.imageUrl}`, {
+                            const res = await fetch(`https://market-place-yn4a.onrender.com${imgObj.imageUrl}`, {
                                 headers: { Authorization: `Bearer ${token}` }
                             });
                             const blob = await res.blob();

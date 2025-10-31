@@ -51,7 +51,7 @@ export default function Order() {
             : `Оплата за ${cart.length} товаров`;
 
         try {
-            const response = await fetch("http://localhost:8080/create-payment", {
+            const response = await fetch("https://market-place-yn4a.onrender.com/create-payment", {
                 method: "POST",
                 headers: { "Content-Type": "application/x-www-form-urlencoded",
                         "Authorization": `Bearer ${token}` 

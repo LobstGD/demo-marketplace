@@ -14,7 +14,7 @@ export default function CreatedCard() {
         if (imageUrls[imagePath]) return imageUrls[imagePath]; 
         try {
             const token = localStorage.getItem('jwtToken');
-            const res = await fetch(`http://localhost:8080${imagePath}`, {
+            const res = await fetch(`https://market-place-yn4a.onrender.com${imagePath}`, {
                 headers: { Authorization: `Bearer ${token}` }
             });
             const blob = await res.blob();
@@ -31,7 +31,7 @@ export default function CreatedCard() {
         const fetchMyCards = async () => {
             try {
                 const token = localStorage.getItem('jwtToken');
-                const res = await fetch('http://localhost:8080/my-cards', {
+                const res = await fetch('https://market-place-yn4a.onrender.com/my-cards', {
                     headers: { Authorization: `Bearer ${token}` }
                 });
                 if (!res.ok) throw new Error("Не удалось получить карточки");
@@ -56,7 +56,7 @@ export default function CreatedCard() {
     const openCard = async (id) => {
         try {
             const token = localStorage.getItem('jwtToken');
-            const response = await fetch(`http://localhost:8080/card/${id}`, {
+            const response = await fetch(`https://market-place-yn4a.onrender.com/card/${id}`, {
                 headers: { Authorization: `Bearer ${token}` }
             });
             if (!response.ok) throw new Error("Ошибка при получении карточки");

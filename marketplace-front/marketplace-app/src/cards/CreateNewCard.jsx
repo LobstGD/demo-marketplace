@@ -59,7 +59,7 @@ export default function CreateNewCard() {
 
             images.forEach(file => formData.append("images", file));
 
-            const response = await fetch("http://localhost:8080/create", {
+            const response = await fetch("https://market-place-yn4a.onrender.com/create", {
                 method: "POST",
                 headers: { "Authorization": `Bearer ${token}` },
                 body: formData

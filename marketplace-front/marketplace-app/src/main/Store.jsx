@@ -26,7 +26,7 @@ export default function Store() {
             const newRatings = {};
             for (let card of cards) {
                 try {
-                    const res = await fetch(`http://localhost:8080/reviews/${card.id}`);
+                    const res = await fetch(`https://market-place-yn4a.onrender.com/reviews/${card.id}`);
                     if (!res.ok) continue;
                     const reviews = await res.json();
                     if (reviews.length === 0) {
@@ -49,7 +49,7 @@ export default function Store() {
     const loadAllCards = async () => {
         setFilter("Все");
         try {
-            const res = await fetch(`http://localhost:8080/cards`, {
+            const res = await fetch(`https://market-place-yn4a.onrender.com/cards`, {
                 headers: {
                     "Authorization": `Bearer ${token}`
                 }
@@ -66,7 +66,7 @@ export default function Store() {
     const filterByCategory = async (category) => {
         setFilter(category);
         try {
-            const res = await fetch(`http://localhost:8080/category/${encodeURIComponent(category)}`, {
+            const res = await fetch(`https://market-place-yn4a.onrender.com/category/${encodeURIComponent(category)}`, {
                 headers: {
                     "Authorization": `Bearer ${token}`
                 }
@@ -203,7 +203,7 @@ export default function Store() {
                                         className='card-logo-placeholder'
                                         style={{
                                             backgroundImage: card.images && card.images.length > 0
-                                                ? `url(${encodeURI(`http://localhost:8080${card.images[0].imageUrl}`)})`
+                                                ? `url(${encodeURI(`https://market-place-yn4a.onrender.com${card.images[0].imageUrl}`)})`
                                                 : 'linear-gradient(135deg, #f1deba 0%, #fff3ea 100%)',
                                             backgroundSize: 'cover',
                                             backgroundPosition: 'center'
