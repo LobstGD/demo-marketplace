@@ -71,9 +71,9 @@ npm run dev
 
 Deployment
 
-- **Backend is deployed on Render.
+- Backend is deployed on Render.
 
-- **Frontend is deployed on Vercel.
+- Frontend is deployed on Vercel.
 
 To deploy locally with Docker Compose:
 
