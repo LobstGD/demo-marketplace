@@ -1,0 +1,211 @@
+.create-card-container {
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 30px;
+
+    padding-right: 30px;
+}
+
+.main-create-container {
+    width: 100%;
+    height: 100%;
+
+    padding: 30px 30px 30px 10px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.с-first-row {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.с-property-title {
+    width: fit-content;
+    font-size: 40px;
+    color: black;
+}
+.instruction-button {
+    width: fit-content;
+    height: fit-content;
+    background-color: white;
+
+    padding: 10px 15px 10px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid rgb(241, 88, 255);
+    border-radius: 10px;
+
+    font-size: 16px;
+    color: rgb(241, 88, 255);
+}
+.create-button {
+    width: fit-content;
+    height: fit-content;
+    background-color: white;
+
+    padding: 10px 15px 10px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid rgb(241, 88, 255);
+    border-radius: 25px;
+
+    font-size: 16px;
+    color: rgb(241, 88, 255);
+}
+
+.show-cards-row {
+    width: fit-content;
+
+    display: flex;
+    flex-direction: row;
+}
+.cards-show {
+    position: static;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 20px 10px 0px;
+
+    border: 0;
+    border-bottom: 1px solid gray;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    color: rgb(241, 88, 255);
+    font-size: 16px;
+}
+.cards-show:hover {
+    border-bottom: 2px solid rgb(241, 88, 255);
+    cursor: pointer;
+}
+
+.created-card-table {
+    position: static;
+    width: 90%;
+    height: fit-content;
+    background-color: white;
+    box-shadow: 0 8px 20px rgba(92, 80, 255, 0.4);
+
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    display: flex;
+    flex-direction: column;
+}
+.first-table-row {
+    width: 100%;
+    height: fit-content;
+    background-color: rgb(244, 244, 244);
+
+    display: flex;
+    flex-direction: row;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+
+    border-bottom: 1px solid gray;
+}
+.column {
+    width: 300px;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    padding: 15px 25px 15px 25px;
+    font-size: 20px;
+    
+}
+.first {
+    width: 400px;
+}
+.fourth {
+    border: 0;
+    width: 250px;
+}
+.fifth {
+    width: 200px;
+}
+.second-table-row {
+    width: 100%;
+    height: fit-content;
+    background-color: white(236, 236, 236);
+
+    display: flex;
+    flex-direction: row;
+    padding: 35px 25px 15px 25px;
+}
+.product-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 290px;
+}
+.mini-card-name-table {
+    width: fit-content;
+    font-size: 16px;
+    color: rgb(241, 88, 255);
+}
+.column-card {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.articul {
+    width: fit-content;
+    color: gray;
+    gap: 20px;
+    font-size: 14px;
+}
+.content {
+    width: fit-content;
+    color: gray;
+    gap: 20px;
+    font-size: 14px;
+}
+.category-container {
+    width: 270px;
+    display: flex;
+}
+.category-name {
+    margin-left: 27px;
+    width: fit-content;
+}
+.code-container {
+    width: 230px;
+}
+.code-of-card {
+    width: fit-content;
+}
+.date-container {
+    width: 200px;
+}
+.date {
+    width: fit-content;
+}
+.status {
+    width: fit-content;
+    height: fit-content;
+
+    background-color: rgb(183, 254, 183);
+    border-radius: 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px 5px 10px;
+
+    font-size: 14px;
+    color: rgb(32, 194, 32);
+}

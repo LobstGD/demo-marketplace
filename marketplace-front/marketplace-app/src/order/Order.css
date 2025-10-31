@@ -1,0 +1,290 @@
+.order-container {
+    width: 100%;
+    height: 100%;
+
+    padding: 20px ;
+    display: grid;
+    grid-template-columns: 1fr 450px;
+    gap: 30px;
+}
+.main-order {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.orders {
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+
+.order {
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    padding: 20px 15px 25px 15px;
+    gap:10px;
+}
+.text-order {
+    width: fit-content;
+    font-size: 26px;
+    color: black;
+}
+.card-info-row {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.card-image {
+    color: gray;
+    border-radius: 5px;
+}
+.main-card-info-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-between;
+}
+.main-card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.mini-card-name {
+    width: fit-content;
+    font-size: 16px;
+    color: black;
+}
+.p-text {
+    width: fit-content;
+    font-size: 14px;
+    color: gray;
+}
+.ooo {
+    width: fit-content;
+    font-size: 14px;
+    color: gray;
+}
+.count-order {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.counting {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: white;
+    border: 1px solid gray;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 24px;
+}
+.count {
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.price-container {
+    height: 100%;
+    justify-content: start;
+    align-content: start;
+}
+.price {
+    font-size: 20px;
+}
+.previous-price {
+    width: fit-content;
+    font-size: 14px;
+    color: gray;
+    border-bottom: 2px dotted gray;
+}
+
+.dilivery-method-container {
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    padding: 20px 15px 25px 15px;
+    gap:10px;
+}
+.dilivery-f-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.dilivery-method-text {
+    width: fit-content;
+    font-size: 26px;
+    color: black;
+}
+.change-dilivery {
+    width: fit-content;
+    font-size: 14px;
+    color: rgb(209, 0, 220);
+
+    background-color: white;
+    border-radius: 25px;
+    padding: 5px 10px 5px 10px;
+    border: 1px solid rgba(254, 179, 255, 0.907);
+}
+.place-of-getting {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 40px;
+}
+.first-method-column {
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    gap: 10px;
+}
+.dilivery-date {
+    margin-top: 10px;
+    width: fit-content;
+    font-size: 14px;
+    color: gray;
+}
+.second-method-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.c-text {
+    width: fit-content;
+    font-size: 14px;
+    color: black;
+}
+.cost-dilivery {
+    width: fit-content;
+    font-size: 14px;
+    color: rgb(209, 0, 220);
+}
+.mini-card-image {
+  width: 60px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  
+}
+
+.card-image:hover {
+    border: 3px solid rgba(254, 179, 255, 0.907);
+    border-radius: 5px;
+}
+
+.payment {
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    padding:20px 15px 25px 15px;
+    gap: 10px;
+}
+.price-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.dilivery-type {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    width: 100%;
+}
+.order-card {
+    margin-top: 10px;
+}
+.delete-button {
+    margin-top: 8px;
+    padding: 6px 12px;
+    background-color: #ff4d4f;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+.delete-button:hover {
+    background-color: #d9363e;
+}
+
+.edit-delivery {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.edit-delivery input {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.edit-delivery input:focus {
+    border-color: rgb(209, 0, 220);
+    box-shadow: 0 0 4px rgba(209, 0, 220, 0.5);
+}
+
+.edit-delivery button {
+    width: fit-content;
+    align-self: flex-start;
+    padding: 6px 14px;
+    font-size: 14px;
+    background-color: rgb(209, 0, 220);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.edit-delivery button:hover {
+    background-color: rgb(180, 0, 190);
+}
+.go-home {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px 0;
+    background-color: white;
+    color: rgb(209, 0, 220);
+    border: 2px solid rgba(209, 0, 220, 0.8);
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.go-home:hover {
+    background-color: rgb(209, 0, 220);
+    color: white;
+    transform: scale(1.02);
+}
